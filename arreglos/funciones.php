@@ -15,22 +15,22 @@ var_dump(count($datos));
 
 // ASORT ORDENA LOS NOMBRES DE UN ARRAY ALFABETICAMENTE
 // Y NUMERICAMENTE
-asort($datos);
-asort($alumnos);
-asort($numeros);
+// asort($datos);
+// asort($alumnos);
+// asort($numeros);
 
-var_dump($numeros);
-var_dump($datos);
-var_dump($alumnos);
+// var_dump($numeros);
+// var_dump($datos);
+// var_dump($alumnos);
 
 // ORDEN A LA INVERSA "ARSORT"
-arsort($datos);
-arsort($alumnos);
-arsort($numeros);
+// arsort($datos);
+// arsort($alumnos);
+// arsort($numeros);
 
-var_dump($numeros);
-var_dump($datos);
-var_dump($alumnos);
+// var_dump($numeros);
+// var_dump($datos);
+// var_dump($alumnos);
 
 // BUSQUEDA Y REEMPLAZO
 
@@ -40,10 +40,11 @@ var_dump($alumnos[$index]);
 var_dump($datos[$key]);
 
 
-$index = array_replace($alumnos, [
+$alumnosCorreccion = array_replace($alumnos, [
     0=> "Agustin",
+    1=> "Jose",
 ]);
 $key = array_search("21", $datos);
-var_dump($alumnos[$index]);
+var_dump($alumnosCorreccion);
 var_dump($datos[$key]);
 ?>
